@@ -1,0 +1,23 @@
+.sign-up {
+  width: 206px;
+  margin-left: 70px;
+  padding: 0;
+  margin-right: 94px;
+}
+
+.social-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+.sign-up__soc-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--animate);
+  .icon-social {
+    fill: var(--primary-white-color);
+  }
+}

@@ -1,0 +1,36 @@
+.individ {
+  padding-bottom: 0;
+}
+
+.individ-list {
+  display: flex;
+  align-items: flex-start;
+}
+
+.individ-item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.individ-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.individ-text {
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.ind__icon-thumb {
+  height: 120px;
+  background-color: var(--buttons-background);
+  border-radius: 4px;
+  @extend .flex-align;
+  justify-content: center;
+  margin-bottom: 30px;
+}

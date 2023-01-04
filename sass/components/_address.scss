@@ -1,0 +1,30 @@
+.address-contain {
+  min-width: 231px;
+  .logo {
+    color: var(--primary-white-color);
+    margin-right: 0;
+    margin-bottom: 28px;
+  }
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  .contact-item {
+    display: flex;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.a-item {
+  color: var(--primary-white-color);
+  line-height: 1.7;
+  text-decoration: none;
+  font-style: normal;
+}
