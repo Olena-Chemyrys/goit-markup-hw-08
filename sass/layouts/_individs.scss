@@ -1,5 +1,6 @@
 .individ {
   padding-bottom: 0;
+  margin-bottom: 60px;
 }
 
 .individ-list {
@@ -18,7 +19,7 @@
 }
 
 .individ-item {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     width: 100%;
     &:not(:last-child) {
       margin-bottom: 30px;

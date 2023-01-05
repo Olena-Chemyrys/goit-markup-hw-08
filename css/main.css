@@ -682,6 +682,7 @@ label.modal-policy-label {
 
 .individ {
   padding-bottom: 0;
+  margin-bottom: 60px;
 }
 
 .individ-list {
@@ -708,7 +709,7 @@ label.modal-policy-label {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .individ-item {
     width: 100%;
   }
@@ -772,58 +773,60 @@ label.modal-policy-label {
           align-items: center;
 }
 
-.section-title {
-  font-size: 36px;
-  line-height: 1.17;
-  color: var(--title-text-color);
-  text-align: center;
-  margin-bottom: 50px;
+@media screen and (max-width: 1199px) {
+  .work-section {
+    display: none;
+  }
 }
-
-.work-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--title-text-color);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .work-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .work-elem {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .work-elem:not(:last-child) {
+    margin-right: 30px;
+  }
+  .work-tumb {
+    position: relative;
+    width: 370px;
+    height: 294px;
+  }
+  .work-decorate {
+    position: absolute;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+  .work-thumb__title {
+    line-height: 1.12;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+  }
 }
-
-.work-elem {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-.work-elem:not(:last-child) {
-  margin-right: 30px;
-}
-
-.work-tumb {
-  position: relative;
-  width: 370px;
-  height: 294px;
-}
-
-.work-decorate {
-  position: absolute;
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  background: rgba(47, 48, 58, 0.8);
-  padding-top: 27px;
-  padding-bottom: 27px;
-}
-
-.work-thumb__title {
-  line-height: 1.12;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-}
-
 .team {
   background-color: var(--buttons-background);
 }
