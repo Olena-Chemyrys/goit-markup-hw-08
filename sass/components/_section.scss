@@ -14,7 +14,15 @@
 }
 
 .section {
-  padding: 94px 0;
+  @media screen and (min-width: 480px) {
+    padding: 60px 0;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 60px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .btn {
@@ -22,4 +30,12 @@
   border-radius: 4px;
   display: inline-block;
   border: none;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--title-text-color);
+  text-align: center;
+  margin-bottom: 50px;
 }
