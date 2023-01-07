@@ -1,39 +1,25 @@
 .client-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  // @include tablet {
+  // }
 
-  @media screen and (min-width: 1200px) {
-    justify-content: center;
+  @include desktop {
+    align-items: flex-start;
   }
 }
 
 .client-item {
-  width: 170px;
+  width: 100%;
   height: 92px;
 
-  @media screen and (min-width: 480px) {
-    &:nth-child(2n + 1) {
-      margin-right: 30px;
-    }
-
-    &:nth-child(-n + 4) {
-      margin-bottom: 30px;
-    }
+  @include tablet {
+    width: calc((100% - 60px) / 3);
   }
 
-  @media screen and (min-width: 768px) {
-    &:not(:nth-child(3n + 3)) {
-      margin-right: 30px;
-    }
-
-    &:nth-child(-n + 3) {
-      margin-bottom: 30px;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+  @include desktop {
+    width: 170px;
   }
 }
 

@@ -15,7 +15,8 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  @extend .flex-align;
+  display: flex;
+  align-items: center;
   justify-content: center;
   transition: background-color var(--animate), color var(--animate);
   &:hover,

@@ -1,6 +1,7 @@
 .header {
   border: 1px solid #ececec;
   .container {
-    @extend .flex-align;
+    display: flex;
+    align-items: center;
   }
 }

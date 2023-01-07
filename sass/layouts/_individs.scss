@@ -1,36 +1,30 @@
 .individ {
   padding-bottom: 0;
-  margin-bottom: 60px;
 }
 
 .individ-list {
-  margin: -15px;
-
-  @media screen and (min-width: 768px) {
+  gap: 30px;
+  @include tablet {
     flex-wrap: wrap;
     display: flex;
-    gap: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     align-items: flex-start;
-    display: flex;
   }
 }
 
 .individ-item {
-  @media screen and (min-width: 480px) {
-    width: 100%;
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc((100% - 30px) / 2);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 270px;
     margin-bottom: 0;
   }
