@@ -1,25 +1,41 @@
 .header-nav {
   display: flex;
-  align-items: center;
-  margin-right: auto;
+  padding: 0 auto;
+
+  @include tablet {
+    align-items: center;
+    margin-right: 90px;
+  }
+
+  // @include desktop {
+  //   margin-right: auto;
+  // }
 }
 
 .header-list {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header-item {
-  position: relative;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  display: inline-block;
-  &:not(:last-child) {
-    margin-right: 50px;
+  @include tablet {
+    position: relative;
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 

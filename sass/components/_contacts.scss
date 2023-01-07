@@ -1,7 +1,16 @@
 .contact-list {
-  display: flex;
-  align-content: center;
-  align-items: center;
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
 }
 
 .contact-item {
