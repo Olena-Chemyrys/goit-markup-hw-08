@@ -9,13 +9,16 @@
   background-position: center;
   background-size: cover;
   background-color: var(--secondary-background-color);
-  max-width: 1600px;
   margin: 0 auto;
+  @include desktop {
+    max-width: 1600px;
+  }
 }
 
 .main-title {
+  width: 360px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
@@ -24,10 +27,14 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
-  width: 696px;
   margin-right: auto;
+  margin-bottom: 30px;
   margin-left: auto;
+
+  @include desktop {
+    font-size: 44px;
+    width: 696px;
+  }
 }
 .primary {
   font-family: inherit;

@@ -6,5 +6,27 @@
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-direction: column;
+  // gap: 30px;
+
+  @include tablet {
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.tablet-wrap {
+  @include tablet {
+    display: flex;
+  }
+
+  @include desktop {
+    align-items: baseline;
+  }
 }

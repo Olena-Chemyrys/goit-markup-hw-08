@@ -1,13 +1,29 @@
 .address-contain {
   min-width: 231px;
+  margin-bottom: 30px;
   .logo {
     color: var(--primary-white-color);
     margin-right: 0;
     margin-bottom: 28px;
+    display: flex;
+    justify-content: center;
+    @include desktop {
+      display: flex;
+      align-items: start;
+    }
+  }
+
+  @include tablet {
+    margin-right: 165px;
+  }
+  @include desktop {
+    margin-right: 94px;
   }
 }
 
 .address-list {
+  align-items: center;
+
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -19,6 +35,9 @@
     font-style: normal;
     padding-top: 0;
     padding-bottom: 0;
+  }
+  @include desktop {
+    align-items: start;
   }
 }
 
