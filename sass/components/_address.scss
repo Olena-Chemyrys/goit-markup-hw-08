@@ -2,7 +2,8 @@
   min-width: 231px;
   margin-bottom: 30px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  // justify-content: center;
   flex-direction: column;
   .logo {
     color: var(--primary-white-color);
