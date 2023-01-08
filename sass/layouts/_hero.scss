@@ -4,13 +4,13 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bgc-480-1x.jpg);
+    url(../..images/bgc-480-1x.jpg);
   @include retina {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/bgc-480-2x.jpg);
+      url(../..images/bgc-480-2x.jpg);
   }
   background-repeat: no-repeat;
   background-position: center;
@@ -51,6 +51,7 @@
 
 .main-title {
   // width: 360px;
+  width: 100%;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -64,6 +65,10 @@
   margin-right: auto;
   margin-bottom: 30px;
   margin-left: auto;
+
+  @include tablet {
+    width: 360px;
+  }
 
   @include desktop {
     font-size: 44px;
