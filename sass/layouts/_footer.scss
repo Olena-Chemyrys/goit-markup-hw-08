@@ -6,27 +6,31 @@
 
 .footer-container {
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  // gap: 30px;
 
-  @include tablet {
-    flex-wrap: wrap;
-  }
+  // @include tablet {
+  //   flex-wrap: wrap;
+  // }
 
   @include desktop {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    //   &:not(:last-child) {
+    //     margin-right: 94px;
+    //   }
+    // }
   }
-}
 
-.tablet-wrap {
-  @include tablet {
+  .tablet-wrap {
     display: flex;
-  }
+    justify-content: center;
+    flex-direction: column;
 
-  @include desktop {
-    align-items: baseline;
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }

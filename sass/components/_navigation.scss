@@ -4,7 +4,6 @@
 
   @include tablet {
     align-items: center;
-    margin-right: 90px;
   }
 
   // @include desktop {
@@ -13,9 +12,7 @@
 }
 
 .header-list {
-  @include mobile {
-    display: none;
-  }
+  display: none;
 
   @include tablet {
     display: flex;

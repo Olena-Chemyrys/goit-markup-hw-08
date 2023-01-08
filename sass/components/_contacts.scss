@@ -1,9 +1,9 @@
 .contact-list {
-  @include mobile {
-    display: none;
-  }
+  display: none;
+
   @include tablet {
     display: block;
+    margin-left: auto;
   }
 
   @include desktop {
@@ -19,13 +19,24 @@
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   margin: 0;
-  &:not(:last-child) {
-    margin-right: 50px;
+
+  @include tablet {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
 .contact-list__link {
   display: flex;
+  font-size: 12px;
   align-items: center;
   align-self: center;
   color: var(--primary-text-color);
@@ -33,6 +44,10 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @include desktop {
+    font-size: 14px;
   }
 }
 
