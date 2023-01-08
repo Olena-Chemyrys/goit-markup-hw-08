@@ -35,10 +35,6 @@
   }
 }
 
-.mobile-menu.menu-close {
-  transform: translateX (100%);
-}
-
 .mobile-menu {
   position: fixed;
   width: 100vw;
@@ -46,7 +42,7 @@
   background-color: var(--buttons-background);
   top: 0;
   left: 0;
-  transform: translateX (0);
+  transform: translateX (100%);
   transition: transform var(--animate);
 
   @include tablet {
@@ -57,6 +53,10 @@
     display: block;
   }
   height: 100%;
+}
+
+.mobile-menu.is-open {
+  transform: translateX ();
 }
 
 .menu-close {

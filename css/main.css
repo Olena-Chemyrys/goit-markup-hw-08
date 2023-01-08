@@ -815,11 +815,6 @@ label.modal-policy-label {
   }
 }
 
-.mobile-menu.menu-close {
-  -webkit-transform: translateX 100%;
-          transform: translateX 100%;
-}
-
 .mobile-menu {
   position: fixed;
   width: 100vw;
@@ -827,8 +822,8 @@ label.modal-policy-label {
   background-color: var(--buttons-background);
   top: 0;
   left: 0;
-  -webkit-transform: translateX 0;
-          transform: translateX 0;
+  -webkit-transform: translateX 100%;
+          transform: translateX 100%;
   -webkit-transition: -webkit-transform var(--animate);
   transition: -webkit-transform var(--animate);
   transition: transform var(--animate);
@@ -843,6 +838,11 @@ label.modal-policy-label {
 .mobile-menu .container {
   position: relative;
   display: block;
+}
+
+.mobile-menu.is-open {
+  -webkit-transform: translateX;
+          transform: translateX;
 }
 
 .menu-close {
@@ -952,14 +952,14 @@ label.modal-policy-label {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/bgc-480-1x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bgc-480-1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/bgc-680-1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bgc-680-1x.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/bgc-480-2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bgc-480-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/bgc-680-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bgc-680-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
