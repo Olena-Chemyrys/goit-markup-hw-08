@@ -4,20 +4,53 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/background-image.jpg);
+    url(../../images/bgc-480-1x.jpg);
+  @include retina {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/bgc-480-2x.jpg);
+  }
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: var(--secondary-background-color);
   margin: 0 auto;
   max-width: 1600px;
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/bgc-480-1x.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/bgc-480-2x.jpg);
+    }
+  }
   @include desktop {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/bgc-1200-1x.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/bgc-1200-2x.jpg);
+    }
     padding: 200px 0;
   }
 }
 
 .main-title {
-  width: 360px;
+  // width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;

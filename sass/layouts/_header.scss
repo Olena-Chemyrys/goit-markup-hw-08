@@ -35,6 +35,10 @@
   }
 }
 
+.mobile-menu.menu-close {
+  transform: translateX (100%);
+}
+
 .mobile-menu {
   position: fixed;
   width: 100vw;
@@ -42,12 +46,9 @@
   background-color: var(--buttons-background);
   top: 0;
   left: 0;
+  transform: translateX (0);
   transition: transform var(--animate);
-  & {
-     {
-      transform: translate(-50%, -50%) scaleX(0) scaleY(0);
-    }
-  }
+
   @include tablet {
     display: none;
   }
