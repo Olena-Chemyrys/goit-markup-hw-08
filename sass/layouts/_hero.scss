@@ -4,7 +4,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../..images/bgc-480-1x.jpg);
+    url(../images/bgc-480-1x.jpg);
   @include retina {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -23,13 +23,13 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/bgc-680-1x.jpg);
+      url(../images/bgc-680-1x.jpg);
     @include retina {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/bgc-680-2x.jpg);
+        url(../images/bgc-680-2x.jpg);
     }
   }
   @include desktop {
