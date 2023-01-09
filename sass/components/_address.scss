@@ -10,11 +10,15 @@
     margin-right: 0;
     margin-bottom: 28px;
   }
+  @include desktop {
+    align-items: flex-start;
+  }
 }
 
 .address-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 12px;
   .contact-item {
     display: flex;
@@ -24,6 +28,10 @@
     font-style: normal;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  @include desktop {
+    align-items: flex-start;
   }
 }
 
