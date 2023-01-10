@@ -5,33 +5,25 @@
 }
 
 .footer-container {
-  display: flex;
-  align-items: center;
-  // justify-content: center;
-  flex-direction: column;
-
-  // @include tablet {
-  //   flex-wrap: wrap;
-  // }
-
   @include desktop {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
-    //   &:not(:last-child) {
-    //     margin-right: 94px;
-    //   }
-    // }
+    justify-content: start;
   }
 
   .tablet-wrap {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    margin-bottom: 60px;
 
     @include tablet {
+      justify-content: center;
       display: flex;
       flex-direction: row;
+    }
+    @include desktop {
+      margin-bottom: 0;
     }
   }
 }

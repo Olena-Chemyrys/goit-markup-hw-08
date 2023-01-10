@@ -22,9 +22,6 @@
   background-color: 0var (--primary-white-color);
   box-shadow: 0 3px 3px 3px hsla(0, 0%, 0%, 0.3);
   gap: 30px;
-  :not(:last-child) {
-    margin-bottom: 30px;
-  }
   & > img {
     width: 100%;
     height: auto;

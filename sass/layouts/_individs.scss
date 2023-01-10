@@ -45,6 +45,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
+  text-align: center;
+  @include tablet {
+    text-align: left;
+  }
 }
 
 .individ-text {

@@ -1,14 +1,16 @@
 .address-contain {
   min-width: 231px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   display: flex;
   align-items: center;
-  // justify-content: center;
   flex-direction: column;
   .logo {
     color: var(--primary-white-color);
     margin-right: 0;
     margin-bottom: 28px;
+  }
+  @include tablet {
+    margin-bottom: 0;
   }
   @include desktop {
     align-items: flex-start;

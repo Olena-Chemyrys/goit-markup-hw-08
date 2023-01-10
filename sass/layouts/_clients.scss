@@ -11,7 +11,7 @@
 }
 
 .client-item {
-  width: 100%;
+  width: calc((100% - 30px) / 2);
   height: 92px;
 
   @include tablet {

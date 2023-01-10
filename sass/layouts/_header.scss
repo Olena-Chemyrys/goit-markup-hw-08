@@ -94,6 +94,10 @@
   color: var(--title-text-color);
 }
 
+.accent {
+  color: var(--accent-color);
+}
+
 .current {
   color: var(--accent-color);
 }
@@ -151,18 +155,17 @@
 //   right: 25px;
 // }
 
-// .icon-close_mobile,
-// .icon-menu_mobile {
-//   position: fixed;
-//   top: 21px;
-//   right: 25px;
-//   color: var(--title-text-color);
-//   transform: color var(--animate);
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-// }
+.icon-menu {
+  position: fixed;
+  top: 21px;
+  right: 25px;
+  fill: currentColor;
+  transform: color var(--animate);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
 
 .mobile-separator {
   border: 1px solid rgba(33, 33, 33, 0.2);

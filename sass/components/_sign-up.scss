@@ -3,7 +3,9 @@
   margin-left: 70px;
   padding: 0;
   margin-right: 94px;
-  margin-bottom: 30px;
+  @include tablet {
+    align-self: start;
+  }
 }
 
 .social-title {
