@@ -21,17 +21,22 @@
 }
 
 .button-mobile {
-  @include tablet {
-    display: none;
-  }
-
+  // position: absolute;
+  // top: 16px;
+  // right: 16px;
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
 
   border: none;
   background-color: transparent;
   z-index: 2;
+
+  @include tablet {
+    display: none;
+  }
 
   .icon-close_mobile {
     display: none;
@@ -47,24 +52,29 @@
 }
 
 .menu-mobile {
-  display: none;
-  position: absolute;
+  transform: translateX(100%);
+  // display: none;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   font-size: 15px;
   text-align: center;
+  background-color: var(--primary-white-color);
+  transition: transform var(--animate);
 
   &.is-open {
+    transform: translateX(0);
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     top: 0;
+    left: 0;
     padding: 48px 40px;
     width: 100vw;
     height: 100%;
-    background-color: white;
+    background-color: var();
     z-index: 1;
   }
 

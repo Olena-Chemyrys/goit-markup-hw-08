@@ -21,13 +21,14 @@
   padding-bottom: 30px;
   background-color: 0var (--primary-white-color);
   box-shadow: 0 3px 3px 3px hsla(0, 0%, 0%, 0.3);
-  gap: 30px;
-  & > img {
-    width: 100%;
-    height: auto;
+  &:not(:last-child) {
+    margin-bottom: 30px;
   }
   @include tablet {
     width: calc((100% - 30px) / 2);
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 
   @include desktop {
@@ -52,4 +53,10 @@
   text-align: center;
   margin-bottom: 16px;
   margin-top: 0;
+}
+
+.team-item__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
