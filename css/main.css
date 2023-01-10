@@ -890,7 +890,8 @@ label.modal-policy-label {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   position: fixed;
-  width: 100%;
+  width: 100vw;
+  height: 100hw;
   top: 0;
   left: 0;
   font-size: 15px;
