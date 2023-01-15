@@ -956,14 +956,6 @@ label.modal-policy-label {
   color: var(--title-text-color);
 }
 
-.accent {
-  color: var(--accent-color);
-}
-
-.current {
-  color: var(--accent-color);
-}
-
 .menu-cont__list {
   margin-right: auto;
   margin-bottom: 64px;
@@ -980,6 +972,10 @@ label.modal-policy-label {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   font-size: 34px;
+}
+
+.current {
+  color: var(--accent-color);
 }
 
 .mobile-list {
