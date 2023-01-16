@@ -987,6 +987,7 @@ label.modal-policy-label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 480px;
 }
 
 .link-icon-menu {
@@ -1126,10 +1127,6 @@ label.modal-policy-label {
 .primary:hover, .primary.primary:focus {
   color: var(--title-text-color);
   background-color: var(--buttons-background);
-}
-
-.individ {
-  padding-bottom: 0;
 }
 
 .individ-list {
@@ -1294,9 +1291,7 @@ label.modal-policy-label {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
-  background-color: 0var --primary-white-color;
-  -webkit-box-shadow: 0 3px 3px 3px hsla(0deg, 0%, 0%, 0.3);
-          box-shadow: 0 3px 3px 3px hsla(0deg, 0%, 0%, 0.3);
+  background-color: var(--primary-white-color);
 }
 .team-item:not(:last-child) {
   margin-bottom: 30px;
@@ -1542,9 +1537,9 @@ label.modal-policy-label {
 }
 @media screen and (min-width: 768px) {
   .footer-container .tablet-wrap {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

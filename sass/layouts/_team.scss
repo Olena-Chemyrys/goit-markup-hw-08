@@ -19,8 +19,8 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
-  background-color: 0var (--primary-white-color);
-  box-shadow: 0 3px 3px 3px hsla(0, 0%, 0%, 0.3);
+  background-color: var(--primary-white-color);
+
   &:not(:last-child) {
     margin-bottom: 30px;
   }
